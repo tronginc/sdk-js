@@ -1,3 +1,4 @@
+// @ts-ignore
 import twemoji from 'twemoji/2/esm';
 import Markdown = require('markdown-it');
 import emoji = require('markdown-it-emoji');

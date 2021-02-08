@@ -1,11 +1,11 @@
 {
-  "name": "viblo-sdk",
+  "name": "trongnc-com",
   "version": "0.1.0-beta.24",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/viblo-asia/sdk-js"
+    "url": "https://github.com/tronginc/sdk-js"
   },
   "homepage": "https://viblo.asia",
   "scripts": {
