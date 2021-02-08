@@ -1,5 +1,5 @@
 import { EmbedOptions } from './plugins/embed';
-import { MarkdownIt, Token, Renderer } from 'markdown-it';
+import { MarkdownIt, Renderer, Token } from 'markdown-it';
 
 type AlterTokenFunction = (token: Token) => Token;
 
@@ -9,8 +9,7 @@ export function alterToken(rule: string, alter: AlterTokenFunction, md: Markdown
 
     md.renderer.rules[rule] = (tokens: Token[], idx: number, options, env, self: Renderer) => {
         const token = tokens[idx];
-        const alteredToken = alter(token);
-        tokens[idx] = alteredToken;
+        tokens[idx] = alter(token);
 
         return renderer(tokens, idx, options, env, self);
     };

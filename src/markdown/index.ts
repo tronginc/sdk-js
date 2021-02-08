@@ -34,7 +34,7 @@ export interface Options {
 }
 
 const defaultOptions: Options = {
-    baseURL: 'https://viblo.asia',
+    baseURL: 'https://trongnc.com',
     mention: true,
     embed: true,
     absoluteURL: true,

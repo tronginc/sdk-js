@@ -30,14 +30,12 @@
     "typescript": "^4.1.2"
   },
   "dependencies": {
-    "axios": "^0.18.1",
-    "katex": "^0.11.1",
-    "laravel-echo": "^1.6.1",
+    "katex": "^0.12.0",
     "lodash.escape": "^4.0.1",
-    "markdown-it": "^8.4.2",
-    "markdown-it-emoji": "^1.4.0",
-    "markdown-it-sanitizer": "https://github.com/huukimit/markdown-it-sanitizer#33dd3f7",
-    "prismjs": "^1.15.0",
-    "twemoji": "^11.2.0"
+    "markdown-it": "^12.0.4",
+    "markdown-it-emoji": "^2.0.0",
+    "markdown-it-sanitizer": "^0.4.3",
+    "prismjs": "^1.23.0",
+    "twemoji": "^13.0.1"
   }
 }
