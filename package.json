@@ -7,13 +7,13 @@
     "type": "git",
     "url": "https://github.com/tronginc/sdk-js"
   },
-  "homepage": "https://viblo.asia",
+  "homepage": "https://trongnc.com",
   "scripts": {
     "build:copy": "node ./scripts/copy-files.js",
     "build": "yarn compile && yarn build:copy",
     "compile": "rimraf dist && tsc",
     "dev": "rimraf dist && yarn build:copy && tsc -w",
-    "docs": "typedoc --out docs --target es6 --theme minimal --name 'Viblo Javascript SDK' --includeDeclarations --externalPattern node_module/* --excludeExternals src",
+    "docs": "typedoc --out docs --target es6 --theme minimal --name 'TRONGNC Javascript SDK' --includeDeclarations --externalPattern node_module/* --excludeExternals src",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "release": "np --yolo --contents=dist",
     "version": "yarn build"

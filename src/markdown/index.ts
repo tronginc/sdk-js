@@ -1,5 +1,4 @@
-// @ts-ignore
-import twemoji from 'twemoji/2/esm';
+import twemoji from 'twemoji/dist/twemoji.esm';
 import Markdown = require('markdown-it');
 import emoji = require('markdown-it-emoji');
 import sanitize = require('markdown-it-sanitizer');
