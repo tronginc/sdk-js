@@ -19,7 +19,7 @@ code[class*="language-"] {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    margin-bottom: calc(16px + 0.5em) !important;
+    margin-bottom: calc(16px + 0.5em);
 }
 
 pre[class*="language-"]::selection,
@@ -41,6 +41,25 @@ pre[class*="language-"] {
     padding: 1em;
     overflow: auto;
     background: #1e1e1e;
+}
+
+pre[class*="language-"][data-filename]:not([data-filename=""]){
+    position: relative;
+    padding-top: calc(1rem + 24px)
+}
+pre[class*="language-"][data-filename]:not([data-filename=""]):before{
+    content: attr(data-filename);
+    font-size: 0.9rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #333333;
+    z-index: 9999;
+    color: #FFFFFF;
+    text-align: center;
+    opacity: 0.75;
+    padding: 6px 0;
 }
 
 :not(pre) > code[class*="language-"] {
