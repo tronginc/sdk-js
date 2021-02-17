@@ -44,22 +44,22 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"][data-filename]:not([data-filename=""]){
+    padding-top: calc(1rem + 24px);
     position: relative;
-    padding-top: calc(1rem + 24px)
 }
 pre[class*="language-"][data-filename]:not([data-filename=""]):before{
     content: attr(data-filename);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     position: absolute;
     left: 0;
-    right: 0;
     top: 0;
     background-color: #333333;
-    z-index: 1;
+    z-index: 9;
     color: #FFFFFF;
     text-align: center;
-    opacity: 0.75;
-    padding: 6px 0;
+    opacity: 0.9;
+    padding: 6px 12px;
+    border-bottom-right-radius: 5px;
 }
 
 :not(pre) > code[class*="language-"] {
