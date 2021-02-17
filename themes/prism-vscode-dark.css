@@ -55,7 +55,7 @@ pre[class*="language-"][data-filename]:not([data-filename=""]):before{
     right: 0;
     top: 0;
     background-color: #333333;
-    z-index: 9999;
+    z-index: 1;
     color: #FFFFFF;
     text-align: center;
     opacity: 0.75;
