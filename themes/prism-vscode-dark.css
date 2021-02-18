@@ -58,7 +58,7 @@ pre[class*="language-"][data-filename]:not([data-filename=""]):before{
     color: #FFFFFF;
     text-align: center;
     opacity: 0.9;
-    padding: 6px 12px;
+    padding: 6px 1em;
     border-bottom-right-radius: 5px;
 }
 
