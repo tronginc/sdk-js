@@ -101,7 +101,8 @@ function createHighlighter(options: Options) {
 
         const languageClass = `${options.langPrefix}${langName || 'none'}`;
 
-        return `<pre class="${languageClass}" data-filename="${fileName}">`
+        return `<pre class="${languageClass}">`
+            + `<span class="file-name">${fileName}</span>`
             + `<code class="${languageClass}">${code}</code>`
             + '</pre>';
     };

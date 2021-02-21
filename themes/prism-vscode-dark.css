@@ -20,6 +20,7 @@ code[class*="language-"] {
     -ms-hyphens: none;
     hyphens: none;
     margin-bottom: calc(16px + 0.5em);
+    border-radius: .3em;
 }
 
 pre[class*="language-"]::selection,
@@ -38,28 +39,26 @@ code[class*="language-"] *::selection {
 }
 
 pre[class*="language-"] {
-    padding: 1em;
     overflow: auto;
     background: #1e1e1e;
+    padding: 1rem;
 }
 
-pre[class*="language-"][data-filename]:not([data-filename=""]){
-    padding-top: calc(1rem + 24px);
-    position: relative;
-}
-pre[class*="language-"][data-filename]:not([data-filename=""]):before{
+pre[class*="language-"] > span:not(:empty){
     content: attr(data-filename);
     font-size: 0.8rem;
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    display: block;
+    margin: -1rem -1rem 1rem -1rem;
     background-color: #333333;
     z-index: 9;
     color: #FFFFFF;
     text-align: center;
-    opacity: 0.9;
-    padding: 6px 1em;
-    border-bottom-right-radius: 5px;
+    opacity: 0.8;
+    padding: 8px 0;
+    border-radius: .3em;
+    font-size: 100%;
 }
 
 :not(pre) > code[class*="language-"] {
