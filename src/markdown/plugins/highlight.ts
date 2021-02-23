@@ -96,15 +96,13 @@ function createHighlighter(options: Options) {
         const { fileName, langName } = parseLanguageToken(lang);
         const prismLang = Prism.languages[langName.toLowerCase()];
         const code = prismLang
-            ? Prism.highlight(str, prismLang, langName)
-            : escapeHtml(str);
+          ? Prism.highlight(str, prismLang, langName)
+          : escapeHtml(str);
 
         const languageClass = `${options.langPrefix}${langName || 'none'}`;
-
-        return `<pre class="${languageClass}">`
-            + `<span class="file-name">${fileName}</span>`
-            + `<code class="${languageClass}">${code}</code>`
-            + '</pre>';
+        const fileNameHtml = fileName ? `<span>${fileName}</span>` : '';
+        const codeHtml = `<code>${code}</code>`;
+        return `<pre class="${languageClass}">${fileNameHtml}<pre>${codeHtml}</pre></pre>`;
     };
 }
 
