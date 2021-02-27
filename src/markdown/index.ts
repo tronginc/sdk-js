@@ -66,6 +66,7 @@ export function createRenderer(options: Options) {
 
     alterToken('link_open', (token) => {
         token.attrPush(['target', '_blank']);
+        token.attrPush(['rel', 'noreferrer']);
 
         if (_options.absoluteURL) {
             const href = token.attrGet('href');
